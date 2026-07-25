@@ -158,6 +158,9 @@ local function swingPlayers()
     end
 
     if #hits > 0 then
+        -- Run swing animation
+        
+        
         Packets.SwingTool.send({
             entityIDs = hits,
             cframe = char:GetPivot(),
