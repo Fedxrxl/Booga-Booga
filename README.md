@@ -14,18 +14,19 @@ I plan on making an Official Free-to-use undetected script that does everything 
 
 # <h1 align="center">All published Scripts</h1>
 <p align="center">
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Fedxrxl/Booga-Booga/refs/heads/main/Auto-Pickup-Items.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Fedxrxl/Booga-Booga/refs/heads/main/Auto-Pickup-Items.lua"))() -- 1,5k Items Per Second
 </p>
 <p align="center">
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Fedxrxl/Booga-Booga/refs/heads/main/Auto-Coin-Press.lua"))()
 </p>
+<h1 align="center"><b>Farming Scripts</b></h1>
 <p align="center">
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Fedxrxl/Booga-Booga/refs/heads/main/Ant-Queen-Servant-Swinger.lua"))()
 </p>
 <p align="center">
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Fedxrxl/Booga-Booga/refs/heads/main/Auto-Gold-Breaker.lua"))() -- Has no Ice Chuck checks
 </p>
-
+<h1 align="center"><b>Event Scripts</b></h1>
 <p align="center">
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Fedxrxl/Booga-Booga/refs/heads/main/Easter-Event-Auto-Walk.lua"))() -- Outdated
 </p>
