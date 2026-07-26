@@ -35,15 +35,24 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Fedxrxl/Booga-Booga/r
 
 
 # <h1 align="center">Aethyrion Hub</h1>
- <p align="center">
+<p align="center">
 Best free open sourced BOOGA BOOGA script coming soon
- </p>
- <p align="center">
+</p>
+<p align="center">
 Christmas Day! May be the Official drop day of Aethryon Hub
- </p>
+</p>
 
 <p align="center">
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Fedxrxl/Booga-Booga/refs/heads/main/Aethyrion%20Hub.lua"))() -- Not released
 </p>
 
-### - Sincerely Grave
+# <h1 align="center">Quick Look at Aethyrion Hub!</h1>
+ <p align="center">
+<img src="https://media.discordapp.net/attachments/1477413734862422016/1530849873912529009/image.png?ex=6a67128b&is=6a65c10b&hm=66520098a4a8389f9d7539275038fecd4df4e2b2373a80ab21bc3e1588792be6&=&format=webp&quality=lossless" width="700" alt="Preview">
+</p>
+
+<p align="center">
+The Image will be Updated with every new Update and with the finishing touches I do
+</p>
+
+# <h1 align="center">Thank you for using my Code! - Sincerely Grave </h1>
