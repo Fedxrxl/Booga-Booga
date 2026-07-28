@@ -1,14 +1,9 @@
 # <h1 align="center">BOOGA BOOGA REBORN</h1>
 
-<p align="center">
-These ROBLOX Scripts are Privately Developed for Group of People who Play 'BOOGA BOOGA [REBORN]", I am not at fault if these scripts are Detected, becomes Detected, gets you banned, ECT.
-</p>
+<p align="center">These ROBLOX Scripts are Privately Developed for Group of People who Play 'BOOGA BOOGA [REBORN]", I am not at fault if these scripts are Detected, becomes Detected, gets you banned, ECT.</p>
 
 <p align="center">If you need to Contact me about Bugs, Glitches, or if its Detected please contact me on DISCORD @chainedgrave [ID:1353833261150896197] or on Telegram @chainedgraves</p>
 <p align="center">You can also join our Official Telegram Server https://t.me/aethryion or our Official DISCORD Server </p>
-
-
-<p align="center">I plan on making an Official Free-to-use undetected script that does everything thats on Nilhub, Synerox, Aster, LHub, ect with plenty of fallbacks, mod protection and much more.</p>
 
 # <h1 align="center">All published Scripts</h1>
 <p align="center">They are in loadstring form for Quick Execution</p>
@@ -23,18 +18,8 @@ These ROBLOX Scripts are Privately Developed for Group of People who Play 'BOOGA
 
 
 # <h1 align="center">Aethyrion Hub</h1>
-<p align="center">Best free open sourced BOOGA BOOGA script coming soon</p>
+<p align="center">Best free BOOGA BOOGA [REBORN] Script coming soon</p>
 <p align="center">Christmas Day! May be the Official drop day of Aethryon Hub</p>
-
-<p align="center">
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Fedxrxl/Booga-Booga/refs/heads/main/Aethyrion%20Hub.lua"))() -- Not released
-</p>
-
-<h1 align="center"><b>Quick look at Aethyrion Hub</b></b></h1>
-<p align="center">
-<img src="https://media.discordapp.net/attachments/1477413734862422016/1530849873912529009/image.png?ex=6a67128b&is=6a65c10b&hm=66520098a4a8389f9d7539275038fecd4df4e2b2373a80ab21bc3e1588792be6&=&format=webp&quality=lossless" width="700" alt="Preview">
-</p>
-
-<p align="center">The Image will be Updated with every new Update and with the finishing touches I do</p>
+<p align="center">If you wish to use Aethyrion Hub please check-out my other repository 'Aethyrion Hub'</p>
 
 # <h1 align="center">Thank you for using my Code! - Sincerely Grave </h1>
