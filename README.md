@@ -3,7 +3,7 @@
 <p align="center">These ROBLOX Scripts are Privately Developed for Group of People who Play 'BOOGA BOOGA [REBORN]", I am not at fault if these scripts are Detected, becomes Detected, gets you banned, ECT.</p>
 
 <p align="center">If you need to Contact me about Bugs, Glitches, or if its Detected please contact me on DISCORD @chainedgrave [ID:1353833261150896197] or on Telegram @chainedgraves</p>
-<p align="center">You can also join our Official Telegram Server https://t.me/aethryion or our Official DISCORD Server </p>
+<p align="center">You can also join our Official Telegram Server https://t.me/aethryion or our Official DISCORD Server https://discord.gg/m5Tda5WSU5</p>
 
 # <h1 align="center">All published Scripts</h1>
 <p align="center">They are in loadstring form for Quick Execution</p>
