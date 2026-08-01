@@ -11,11 +11,13 @@ local ItemIDS = require(ReplicatedStorage.Modules.ItemIDS)
 local Clock = require(ReplicatedStorage.Modules.Clock)
 local LocalPlayer = Players.LocalPlayer
 
+-- CPS Settings
 local cpsCap = 16
 local dontBreakCap = true
 local minHealth = 99
 local fruit = "Bloodfruit"
 
+-- Hitlist for Targets
 local hitlist = {
     ["Sky Crewmate"] = true,
     ["Crewmate"] = true,
@@ -76,6 +78,7 @@ local function heal()
         value = FruitID,
     })
 end
+
 local function getPirate(part)
     local current = part
 
@@ -129,11 +132,11 @@ while task.wait(0.05) do
                         entityID = entityID,
                         buffer = nil,
                     }
-                    
-                    if LocalPlayer:GetAttribute("Health") <= minHealth then
+
+                    if humanoid.Health >= minHealth then
+                        print("Healing...")
                         heal()
                     end
-
                 end
             end
         end
