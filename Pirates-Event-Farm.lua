@@ -7,8 +7,14 @@ local ReplicatedStorage = cloneref(game:GetService("ReplicatedStorage"))
 repeat task.wait() until ReplicatedStorage:FindFirstChild("GameLoaded")
 
 local Packets = require(ReplicatedStorage.Modules.Packets)
+local ItemIDS = require(ReplicatedStorage.Modules.ItemIDS)
 local Clock = require(ReplicatedStorage.Modules.Clock)
 local LocalPlayer = Players.LocalPlayer
+
+local cpsCap = 16
+local dontBreakCap = true
+local minHealth = 99
+local fruit = "Bloodfruit"
 
 local hitlist = {
     ["Sky Crewmate"] = true,
@@ -33,6 +39,43 @@ local function firepacket(packetName, ...)
     return success
 end
 
+local function GetItemId(itemName)
+	for id, name in pairs(ItemIDS) do
+		if name == itemName then
+			return id
+		end
+	end
+
+	return nil -- Item not found
+end
+
+local clicks = {}
+
+local function heal()
+    local now = tick()
+
+    -- Remove entries older than 1 second
+    while #clicks > 0 and now - clicks[1] >= 1 do
+        table.remove(clicks, 1)
+    end
+
+    -- Current CPS is #clicks
+    if dontBreakCap and #clicks >= cpsCap then
+        return
+    end
+
+    local FruitID = GetItemId(fruit)
+    if not FruitID then
+        warn("Fruit not found:", fruit)
+        return
+    end
+
+    table.insert(clicks, now)
+
+    firepacket("UseBagItem", {
+        value = FruitID,
+    })
+end
 local function getPirate(part)
     local current = part
 
@@ -86,6 +129,11 @@ while task.wait(0.05) do
                         entityID = entityID,
                         buffer = nil,
                     }
+                    
+                    if LocalPlayer:GetAttribute("Health") <= minHealth then
+                        heal()
+                    end
+
                 end
             end
         end
