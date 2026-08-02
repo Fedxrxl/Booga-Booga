@@ -142,6 +142,11 @@ while task.wait(0.05) do
         end
 
         if #hitEntities > 0 then
+            -- Call Animation // Gotta figure out how this call works
+            --firepacket("PlayAnimation", {
+            --    value = true
+            --})
+            -- Call Swing
             firepacket("SwingTool", {
                 entityIDs = hitEntities,
                 cframe = character:GetPivot(),
