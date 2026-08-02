@@ -143,9 +143,9 @@ while task.wait(0.05) do
 
         if #hitEntities > 0 then
             -- Call Animation // Gotta figure out how this call works
-            --firepacket("PlayAnimation", {
-            --    value = true
-            --})
+            firepacket("PlayAnimation", {
+                value = "Swing"
+            })
             -- Call Swing
             firepacket("SwingTool", {
                 entityIDs = hitEntities,
