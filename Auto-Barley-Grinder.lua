@@ -91,6 +91,6 @@ end
 
 
 firepacket("InteractStructure", {
-    ["entityID"] = closest_GetDeployableId("Grinder"), 
-    ["itemID"] = GetItemId("Barley") 
+    ["entityID"] = tonumber(closest_GetDeployableId("Grinder")), 
+    ["itemID"] = tonumber(GetItemId("Barley")) 
 })
