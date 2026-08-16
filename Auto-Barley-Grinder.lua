@@ -44,7 +44,7 @@ local function GetItemId(itemName) -- Function to get the ID of an item by its n
 	return nil -- Item not found
 end
 
-local function closest_GetDeployableId(deployableName) -- Function to get the ID of a deployable by its name closest to the Player
+local function closest_GetDeployableId(deployableName)
     local character = Player.Character
     if not character then
         return nil
@@ -58,11 +58,11 @@ local function closest_GetDeployableId(deployableName) -- Function to get the ID
     local closestId = nil
     local closestDistance = math.huge
 
-    for id, name in pairs(Deployables) do
-        if name == deployableName then
-            local deployable = workspace:FindFirstChild(tostring(id), true)
+    for _, deployable in ipairs(workspace:GetDescendants()) do
+        if deployable.Name == deployableName then
+            local entityId = deployable:GetAttribute("EntityId")
 
-            if deployable then
+            if entityId then
                 local position
 
                 if deployable:IsA("Model") then
@@ -79,7 +79,7 @@ local function closest_GetDeployableId(deployableName) -- Function to get the ID
 
                     if distance < closestDistance then
                         closestDistance = distance
-                        closestId = id
+                        closestId = entityId
                     end
                 end
             end
