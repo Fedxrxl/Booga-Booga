@@ -59,8 +59,8 @@ local function closest_GetDeployableId(deployableName)
     local closestDistance = math.huge
 
     for _, deployable in ipairs(workspace:GetDescendants()) do
-        if deployable.Name == deployableName then
-            local entityId = deployable:GetAttribute("EntityId")
+        if deployable.Name:lower() == deployableName:lower() then
+            local entityId = deployable:GetAttribute("EntityID")
 
             if entityId then
                 local position
