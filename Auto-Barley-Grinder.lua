@@ -90,7 +90,20 @@ local function closest_GetDeployableId(deployableName)
 end
 
 
+local entityID = tonumber(closest_GetDeployableId("Grinder"))
+local itemID = tonumber(GetItemId("Barley"))
+
+if not entityID then
+    warn("Failed to get EntityID for Grinder")
+    return
+end
+
+if not itemID then
+    warn("Failed to get ItemID for Barley")
+    return
+end
+
 firepacket("InteractStructure", {
-    ["entityID"] = tonumber(closest_GetDeployableId("Grinder")), 
-    ["itemID"] = tonumber(GetItemId("Barley")) 
+    ["entityID"] = entityID,
+    ["itemID"] = itemID
 })
