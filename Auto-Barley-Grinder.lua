@@ -35,7 +35,7 @@ local function firepacket(packetName, ...) -- Function to send a packet to the s
 end
 
 local function GetItemId(itemName) -- Function to get the ID of an item by its name
-	for id, name in pairs(ItemIDS) do
+	for name, id in pairs(ItemIDS) do
 		if name == itemName then
 			return id
 		end
