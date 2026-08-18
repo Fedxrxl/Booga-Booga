@@ -35,13 +35,7 @@ local function firepacket(packetName, ...) -- Function to send a packet to the s
 end
 
 local function GetItemId(itemName) -- Function to get the ID of an item by its name
-	for name, id in pairs(ItemIDS) do
-		if name == itemName then
-			return id
-		end
-	end
-
-	return nil -- Item not found
+	return ItemIDS[itemName]
 end
 
 local function closest_GetDeployableId(deployableName)
@@ -103,7 +97,12 @@ if not itemID then
     return
 end
 
-firepacket("InteractStructure", {
+print(entityID)
+print(itemID)
+
+local success = firepacket("InteractStructure", {
     ["entityID"] = entityID,
     ["itemID"] = itemID
 })
+
+print(success)
